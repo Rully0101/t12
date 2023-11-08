@@ -14,9 +14,11 @@
         </style>
         <style type="text/css">
             #menu {
-            /* 選單大小 */
-            width: 1920px;
-            height: 135px;
+            width: 960px;
+            margin: 0 auto;
+            height: 150px; /* 設定你想要的高度值 */
+            position: relative;
+            z-index: 1;
             }
             #menu ul {
             /* 取消ul樣式符號 */
@@ -41,20 +43,23 @@
             /* 這邊也要設float，否則IE6會以100%寬度顯示 */
             float: left;
             /* 固定高度 */
-            height: 33px;
-            width: 100px;
+            height: 35px;
+            width: 320px;
             text-align: center;
+            line-height: 35px;
+            position: relative;
+            z-index: 1;
             }
             #menu ul li ul {
             /* 讓第二層ul跳脫文件流以利定位 */
             position: absolute;
             /* 固定寬度 */
-            width: 100px;
+            width: 250px;
             /* 避免出現捲軸 */
             overflow: visible;
             /* 讓ul與母階層li相同位置 */
             clear: left;
-            margin-top: 30px;
+            margin-top: 35px;
             margin-right: 0;
             margin-bottom: 0;
             margin-left: 0;
@@ -87,7 +92,7 @@
             }
             /* 修正IE7絕對定位差異 */
             *:first-child+html #menu ul li ul li ul {
-            margin-top: -30px;
+            margin-top: -35px;
             }
             #menu ul li ul li ul li {
             /* width、float繼承第二層，免設定 */
@@ -123,7 +128,8 @@
             /* ---------- 以下為美化用，非必需 ---------- */
             /* 預設字體 */
             #menu {
-            font-size: 12px;
+            font-size: 16px;
+            text-align: center;
             }
             /* 第一層ul背景色彩與邊框 */
             #menu ul {
@@ -133,6 +139,7 @@
             #menu ul li a {
             color: #FFF;
             text-decoration: none;
+            text-align: center;
             line-height: 35px;
             }
             /*第二層ul背景色彩與邊框 */
@@ -141,14 +148,14 @@
             }
             /* 第二層a字型 */
             #menu ul li ul li a {
-            font-size: 12px;
+            font-size: 16px;
             color: #F66;
             text-decoration: none;
             }
             /* 觸動第一層li時，改變背景色 */
             #menu ul li:hover,
             #menu ul li a:hover {
-            background: rgb(72, 255, 0);
+            background: rgb(255, 0, 128);
             }
             #menu ul li:hover a {
             color: rgb(0, 0, 0);
@@ -156,7 +163,7 @@
             /* 觸動第二層以上li時改變背景色 */
             #menu ul li ul li:hover,
             #menu ul li ul li a:hover {
-            background: #099;
+            background: rgb(248, 174, 220);
             }
             </style>
             <style>
@@ -207,7 +214,7 @@
             </ul>
             </li>
             <li> <a href="https://www.youtube.com/channel/UCbhfyYyihYCujpG55YAqzFA">Youtuber頻道</a>
-            <div></div>
+            <div></div></li>
             </div>
             </body> 
             <body>
